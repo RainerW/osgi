@@ -1,0 +1,5 @@
+Private-Package: de.bitnoise.example.osgi.rest
+Service-Component: *
+Import-Package: org.restlet.resource,\
+	*
+Bundle-Activator: de.bitnoise.example.osgi.rest.Activator

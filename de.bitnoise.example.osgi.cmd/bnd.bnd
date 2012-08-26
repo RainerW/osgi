@@ -10,3 +10,4 @@
 	org.apache.felix.shell,\
 	de.bitnoise.example.osgi.api;version=latest
 -sub: *.bnd
+-runrequire: bundle:(symbolicname=org.apache.felix.shell)
