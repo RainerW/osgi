@@ -1,0 +1,11 @@
+Private-Package: de.bitnoise.exaple.osgi.wicket
+Service-Component: *
+Bundle-Activator: de.bitnoise.exaple.osgi.wicket.Activator
+Import-Package: net.sf.cglib.reflect;version='[2,3)',\
+	net.sf.cglib.core;version='[2,3)',\
+	net.sf.cglib.proxy;version='[2,3)',\
+	org.ops4j.pax.wicket.util.proxy,\
+	*,\
+	javax.servlet;resolution:=optional,\
+	org.apache.wicket.request.http.WebRequest*;resolution:=optional,\
+	javax.servlet*;resolution:=optional
