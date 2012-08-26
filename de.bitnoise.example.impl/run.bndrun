@@ -1,0 +1,16 @@
+-runfw: org.apache.felix.framework;version='[4,5)'
+
+-runbundles: de.bitnoise.example.impl.command;resolution=file:/C:/develop/osgi/test/de.bitnoise.example.impl/generated/de.bitnoise.example.impl.command.jar;version=latest,\
+	org.apache.felix.scr;resolution=file:/C:/develop/osgi/test/cnf/repo/org.apache.felix.scr/org.apache.felix.scr-1.6.0.jar;version='[1.6.0,1.6.1)',\
+	de.bitnoise.example.impl.provider;resolution=file:/C:/develop/osgi/test/de.bitnoise.example.impl/generated/de.bitnoise.example.impl.provider.jar;version=latest,\
+	osgi.cmpn;resolution=http://bundles.bndtools.org.s3.amazonaws.com/osgi.cmpn/osgi.cmpn-4.2.1.jar;version='[4.2.1,4.2.2)',\
+	org.apache.felix.shell.tui;resolution=file:/C:/develop/osgi/test/cnf/repo/org.apache.felix.shell.tui/org.apache.felix.shell.tui-1.4.1.jar;version='[1.4.1,1.4.2)',\
+	de.bitnoise.example.api;resolution=file:/C:/develop/osgi/test/de.bitnoise.example.api/generated/de.bitnoise.example.api.jar;version=latest,\
+	org.apache.felix.shell;resolution=file:/C:/develop/osgi/test/cnf/repo/org.apache.felix.shell/org.apache.felix.shell-1.4.2.jar;version='[1.4.2,1.4.3)'
+
+-runrequire: bundle:(symbolicname=org.apache.felix.shell),\
+	bundle:(symbolicname=org.apache.felix.shell.tui),\
+	bundle:(symbolicname=de.bitnoise.example.impl.provider),\
+	bundle:(symbolicname=org.apache.felix.scr),\
+	bundle:(symbolicname=de.bitnoise.example.impl.command)
+-resolve: auto

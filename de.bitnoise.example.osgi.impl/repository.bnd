@@ -1,0 +1,2 @@
+Private-Package: de.bitnoise.example.osgi.repo
+Service-Component: *

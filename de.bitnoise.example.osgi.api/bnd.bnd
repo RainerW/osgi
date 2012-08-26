@@ -1,0 +1,3 @@
+Export-Package: de.bitnoise.example.osgi.api.model,\
+	de.bitnoise.example.osgi.api.repo,\
+	de.bitnoise.example.osgi.api.auth
