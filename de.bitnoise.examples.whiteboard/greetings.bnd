@@ -1,0 +1,2 @@
+Private-Package: de.bitnoise.example.whiteboard.greeter2
+Service-Component: *

@@ -1,0 +1,3 @@
+Private-Package: de.bitnoise.example.whiteboard.service
+Service-Component: *
+Export-Package: de.bitnoise.example.whiteboard.api
